@@ -10,7 +10,7 @@ import productRouter from "../server/routes/productRoute.js";
 import cartRouter from "../server/routes/cartRoute.js";
 import addressRouter from "../server/routes/addressRoute.js";
 import orderRouter from "../server/routes/orderRoute.js";
-import { stripeWebhooks } from "../server/controllers/orederController.js";
+//import { stripeWebhooks } from "../server/controllers/orederController.js";
 
 const app = express();
 
@@ -25,7 +25,7 @@ const connectServices = async () => {
 };
 
 // Stripe webhook (must come before bodyParser middleware)
-app.post('/api/stripe', express.raw({ type: 'application/json' }), stripeWebhooks);
+//app.post('/api/stripe', express.raw({ type: 'application/json' }), stripeWebhooks);
 
 // Middlewares
 app.use(express.json());

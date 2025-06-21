@@ -113,7 +113,7 @@ npm run dev
 
 Once the servers are running:
 
-* Access the **Buyer Portal** at `http://localhost:3000`
+* Access the **Buyer Portal** at `http://localhost:4000`
 * Access the **Seller Portal** through separate login credentials.
 
 ### Example Workflow:
@@ -152,10 +152,6 @@ Please open an issue or submit a pull request for any features, improvements, or
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.
-See the [LICENSE](LICENSE) file for more details.
 
 ---
 

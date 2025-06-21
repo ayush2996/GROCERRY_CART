@@ -85,12 +85,33 @@ npm install
 
 ### 4. Configure Environment Variables
 
-Create a `.env` file inside the `backend` directory:
+#### Frontend: Create a `.env` file inside the `frontend` directory:
 
 ```env
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-STRIPE_SECRET_KEY=your_stripe_secret_key
+VITE_CURRENCY='YOUR_CURRENCY'
+VITE_BACKEND_URL='YOUR_BACKEND_URL'
+```
+
+#### Backend: Create a `.env` file inside the `backend` directory:
+
+```env
+MONGODB_URI=YOUR_MONGODB_URI
+JWT_SECRET='YOUR_JWT_SECRET'
+NODE_ENV='development'
+
+# Admin Credentials
+SELLER_EMAIL='YOUR_SELLER_EMAIL'
+SELLER_PASSWORD='YOUR_SELLER_PASSWORD'
+
+# Cloudinary
+CLOUDINARY_CLOUD_NAME='YOUR_CLOUDINARY_CLOUD_NAME'
+CLOUDINARY_API_KEY='YOUR_CLOUDINARY_API_KEY'
+CLOUDINARY_API_SECRET='YOUR_CLOUDINARY_API_SECRET'
+
+# Stripe
+STRIPE_PUBLISHABLE_KEY='YOUR_STRIPE_PUBLISHABLE_KEY'
+STRIPE_SECRET_KEY='YOUR_STRIPE_SECRET_KEY'
+STRIPE_WEBHOOK_SECRET='YOUR_STRIPE_WEBHOOK_SECRET'
 ```
 
 ### 5. Start the Application
@@ -153,9 +174,10 @@ Please open an issue or submit a pull request for any features, improvements, or
 ---
 
 
+
 ---
 
-## 📬 Contact
+## 📨 Contact
 
 **Ayush Kumar Singh**
 
